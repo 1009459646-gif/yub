@@ -11,6 +11,7 @@
   --accent:#0f6b5c; --risk:#c0392b; --ok:#1e8e5a; --gold:#b8860b;
   --day1:#0f6b5c;--day2:#c0392b;--day3:#2471a3;--day4:#b8860b;--day5:#7d3c98;--day6:#117a65;
   --day7:#d35400;--day8:#2874a6;--day9:#a04000;--day10:#1e8449;
+  --sea:#eaf1f5;--land:#fdfbf6;--coast:#d2dce1;
   --shadow:0 2px 10px rgba(60,50,30,.08);
 }
 @media (prefers-color-scheme: dark){
@@ -212,7 +213,11 @@ footer{text-align:center;color:var(--ink2);font-size:12px;padding:30px 0 10px}
       <li>办理北欧+泰国 eSIM 流量（15 天）</li>
       <li>购买旅游保险（含自驾与户外徒步）</li>
       <li>确认 Hertz 取车材料：驾照翻译认证件、主驾信用卡</li>
-      <li>准备曼谷机场过夜装备：颈枕、耳塞、眼罩、薄毯</li>
+      <li>出发前 3 天内（不早于 72 小时）免费填写泰国 TDAC 电子入境卡：tdac.immigration.go.th，两人各一份，保存二维码</li>
+      <li>确认 MF853→TG954 行李能否直挂奥斯陆；不直挂就在 BKK 提取并寄存（约 100–200 THB/件）</li>
+      <li>换约 1 万泰铢/人等值现金备用（泰国海关可能抽查资金证明，只认现金）</li>
+      <li>曼谷当天穿长裤/长裙 + 遮肩上衣（大皇宫、卧佛寺对着装有硬性要求）</li>
+      <li>准备机场过夜装备：颈枕、耳塞、眼罩、薄毯（22:15 值机后到 00:05 起飞）</li>
       <li>准备一个透明文件袋装全部退税单据+小票，全程随身不托运</li>
       <li>列出 10.2 Leknes 超市采购清单（自热晚餐食材+伴手礼）</li>
       <li>把 7 家酒店订单截图发给小鸥（补全本页地址电话）</li>
@@ -252,7 +257,8 @@ footer{text-align:center;color:var(--ink2);font-size:12px;padding:30px 0 10px}
   </div></details>
 
   <details class="tip"><summary>✈️ 曼谷两晚一日的转机须知</summary><div class="body">
-    <p><b>去程 9.23</b>：11:15 落地后不入境远行，素万那普陆侧 24 小时开放，B1 层有美食街与便利店；21:00 前后到出发层办 TG954 值机。厦航联程可尝试行李直挂奥斯陆，值机时确认。</p>
+    <p><b>去程 9.23 · 市区半日游</b>：11:15 落地 → 免签入境（需 TDAC 二维码 + 续程机票，可能抽查 1 万泰铢/人等值现金）→ 12:50 机场快线 ARL 进城（26 分钟到 Phaya Thai，45 THB；行李多就打车 400–500 THB）→ 大皇宫 + 玉佛寺（500 THB，<b>15:30 停止售票</b>）→ 步行 10 分钟到卧佛寺（300 THB，18:30 前）→ Tha Tien 渡轮 3–4 THB 到郑王庙（200 THB，18:00 前）→ 19:00 唐人街耀华力路晚餐 → <b>21:00 必须出发回机场</b>，22:15 值机，00:05 TG954 飞奥斯陆。</p>
+    <p>泰国 9 月仍处雨季，午后常见雷阵雨，随身轻便雨衣；寺庙<b>严格遮肩过膝</b>，进殿脱鞋。大皇宫内不接受无袖/短裤/破洞裤，门口租纱笼要排队。所有寺庙门口说「今天关门、我带你去」的都是经典骗局，直接去正门买票。</p>
     <p><b>回程 10.7</b>：⚠️ 土航与 MF854 为<b>两张独立订单</b>，行李不能直挂：09:40 落地 → 入境 → 提行李 → MF 柜台重新值机（起飞前 60 分钟关闭）→ 出境。正常 2.5h 够用，但土航晚点会连锁——回程尽量少托运，并跟踪前序航班动态。</p>
   </div></details>
 
@@ -263,6 +269,7 @@ footer{text-align:center;color:var(--ink2);font-size:12px;padding:30px 0 10px}
     <p>罗弗敦博物馆（卡伯尔沃格）：秋季 11:00–15:00（以现场为准）。</p>
     <p>瓦萨博物馆：9–5 月每日 10:00–17:00，10 月成人约 190 SEK。</p>
     <p>市政厅：<b>登塔仅 5–9 月开放</b>；建筑导览全年有，英文场约 10:00/12:00/14:00，150 SEK，先到先得。</p>
+    <p>曼谷：大皇宫 + 玉佛寺 8:30–16:30（<b>15:30 停止售票</b>）500 THB；卧佛寺 约 8:00–18:30，300 THB；郑王庙 8:00–18:00，200 THB；Tha Tien 渡轮 3–4 THB。中国普通护照免签（单次 ≤30 天），<b>入境前 3 天内须免费填 TDAC</b>。</p>
   </div></details>
 </section>
 
@@ -292,17 +299,27 @@ const HOTELS=[
  ["10.1–10.2","Arctic Resort Lofoten（Rorbu 小木屋）","Ramberg","待补截图"],
  ["10.2–10.3","Radisson Red Oslo Airport","奥斯陆机场 Gardermoen","待补截图"],
  ["10.3–10.6","Hobo Stockholm","斯德哥尔摩","待补截图"],
- ["9.23 深夜","素万那普机场内过夜（不进城）","曼谷","陆侧 24h 开放"]
+ ["9.23 白天","曼谷市区半日游（无住宿）","曼谷","玩到 21:00 回机场，乘 00:05 TG954"],
 ];
 const M=q=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q);
 const DIR=(o,d,w,m)=>"https://www.google.com/maps/dir/?api=1&origin="+encodeURIComponent(o)+"&destination="+encodeURIComponent(d)+(w&&w.length?"&waypoints="+w.map(encodeURIComponent).join("|"):"")+"&travelmode="+(m||"driving");
 const DAYS=[
-{d:"9.23",w:"周三",title:"厦门 → 曼谷 · 机场过夜",tz:TZ_TH,color:"#0f6b5c",hotel:"素万那普机场内（陆侧 24h 开放）",
+{d:"9.23",w:"周三",title:"曼谷半日 · 大皇宫→卧佛寺→郑王庙→唐人街 → 夜飞奥斯陆",tz:TZ_TH,color:"#0f6b5c",hotel:"无住宿 · 玩到 21:00 回机场",
+ route:{o:"Suvarnabhumi Airport",w:["Wat Phra Kaew Grand Palace","Wat Pho Bangkok","Wat Arun Bangkok","Yaowarat Chinatown Bangkok"],d:"Suvarnabhumi Airport",m:"transit"},
  items:[
- ["08:45","MF853 起飞",M("厦门高崎国际机场 T3"),"厦门高崎 T3 → 11:15 抵曼谷素万那普（飞行约 3.5h，曼谷比厦门慢 1 小时）"],
- ["11:15","落地曼谷 · 机场休整",M("素万那普机场"),"行李尝试直挂奥斯陆（联程票，值机时向厦航确认）；B1 层美食街/便利店解决三餐"],
- ["21:00","TG954 开放值机",M("Suvarnabhumi Airport Departure Hall"),"出发层 4 层；值机后过安检在候机区休息"],
- ["00:05","TG954 起飞 → 奥斯陆",null,"次日 07:25 抵达，机上过夜"]]},
+ ["08:45","MF853 起飞（厦门 T3 → 曼谷）",M("厦门高崎国际机场 T3"),"11:15 落地素万那普（飞行约 3.5h，曼谷比厦门慢 1 小时）；落地前换好夏装与寺庙着装"],
+ ["11:45","入境泰国 · 免签通道",M("Suvarnabhumi Airport"),"持中国普通护照免签（单次 ≤30 天）；备护照（有效期≥6个月）+ 续程机票 + <b>TDAC 二维码</b>；可能抽查 1 万泰铢/人等值现金（只认现金）"],
+ ["12:20","行李：直挂则直接进城，否则提取寄存",M("Suvarnabhumi Airport Left Luggage"),"值机时先向厦航确认行李能否直挂奥斯陆；不直挂就在 BKK 提取并寄存（约 100–200 THB/件）"],
+ ["12:50","机场快线 ARL 进城（约 26 分钟到 Phaya Thai，45 THB）",M("Airport Rail Link Phaya Thai Station"),"行李多或赶时间就打车去老城，约 45–70 分钟 / 400–500 THB"],
+ ["13:40","午餐 · Tha Maharaj 河畔商圈",M("Tha Maharaj Bangkok"),"河边简餐，顺带避一避午后雷阵雨"],
+ ["14:30","大皇宫 + 玉佛寺 · 500 THB",M("Wat Phra Kaew Grand Palace Bangkok"),"开放 8:30–16:30，<b>15:30 停止售票</b>；必须遮肩过膝、进殿脱鞋。门口说「今天关闭」的都是骗子，直接去正门"],
+ ["16:30","卧佛寺 Wat Pho · 300 THB（含一瓶水）",M("Wat Pho Bangkok"),"与大皇宫步行约 10 分钟；46 米金色卧佛；开放约 8:00–18:30"],
+ ["17:40","Tha Tien 码头渡轮 → 郑王庙 Wat Arun · 200 THB",M("Wat Arun Bangkok"),"渡轮仅 3–4 THB；郑王庙 18:00 关门，赶不上就在河畔拍日落与夜景"],
+ ["19:00","唐人街耀华力路晚餐",M("Yaowarat Chinatown Bangkok"),"18:00 后夜市才真正热闹；摊档多不刷卡，备现金"],
+ ["21:00","打车回素万那普机场（夜间约 45–60 分钟）",M("Suvarnabhumi Airport"),"<b>别晚于 21:00 出发</b>，00:05 的航班经不起迟到"],
+ ["22:15","TG954 值机（00:05 起飞）",M("Suvarnabhumi Airport Departure Hall"),"国际柜台一般起飞前 2h 开放、前 1h 关闭；值机后出境安检，候机区休息"],
+ ["00:05","TG954 起飞 → 次日 07:25 奥斯陆",null,"机上过夜，落地即开始奥斯陆行程"]],
+ risk:"<b>今天唯一的变数是 MF853 准点与入境排队。</b>若 14:30 前到不了大皇宫（15:30 停止售票），直接放弃大皇宫，改「卧佛寺 + 郑王庙 + 唐人街」三站，体验并不打折。9 月是曼谷雨季，午后常有雷阵雨，随身带轻便雨衣；无论玩到哪里，<b>21:00 必须出发回机场</b>。"},
 {d:"9.24",w:"周四",title:"抵达奥斯陆 · 港区漫游",tz:TZ_NOME,color:"#c0392b",hotel:"Scandic Go Grensen",
  route:{o:"Oslo Airport Gardermoen",w:["Oslo Opera House"],d:"Scandic Go Grensen Oslo",m:"transit"},
  items:[
@@ -438,6 +455,7 @@ const DAYS=[
 /* ===================== 倒计时 ===================== */
 const EVENTS=[
  ["MF853 厦门 → 曼谷 起飞","2026-09-23T08:45:00+08:00","2026-09-23T11:15:00+07:00"],
+ ["曼谷半日游 · 出发进城","2026-09-23T12:50:00+07:00","2026-09-23T21:00:00+07:00"],
  ["TG954 曼谷 → 奥斯陆 起飞","2026-09-24T00:05:00+07:00","2026-09-24T07:25:00+02:00"],
  ["挪威缩影 奥斯陆 S 出发","2026-09-26T06:25:00+02:00","2026-09-26T20:38:00+02:00"],
  ["WF630 卑尔根 → 特罗姆瑟 起飞","2026-09-27T20:15:00+02:00","2026-09-27T22:20:00+02:00"],
@@ -504,23 +522,17 @@ function proj(pts,x0,y0,w,h){
 }
 function drawMap(svg,pts,links,colors,labels,opt){
  opt=opt||{};const W=opt.w||640,H=opt.h||420;
- let s='<svg viewBox="0 0 '+W+" "+H+'" style="width:100%;height:auto;'+(opt.bg?'background:'+opt.bg+';border-radius:10px;':'')+'">'+WOBBLE;
+ let s='<svg viewBox="0 0 '+W+" "+H+'" style="width:100%;height:auto;'+(opt.bg?'background:'+opt.bg+';border-radius:10px;':'')+'">';
  // 网格底
- s+='<g opacity="0.35">';
- for(let x=20;x<W;x+=48)s+='<line x1="'+x+'" y1="10" x2="'+x+'" y2="'+(H-10)+'" stroke="var(--line)" stroke-width="0.5" stroke-dasharray="1 5"/>';
- for(let y=20;y<H;y+=48)s+='<line x1="10" y1="'+y+'" x2="'+(W-10)+'" y2="'+y+'" stroke="var(--line)" stroke-width="0.5" stroke-dasharray="1 5"/>';
- s+="</g>";
  const P=proj(pts,44,26,W-64,H-64);
- s+='<g filter="url(#wob)">';
  links.forEach((L,i)=>{
   const c=colors[i%colors.length];
   for(let k=0;k<L.length-1;k++){
     const a=P(pts[L[k]]),b=P(pts[L[k+1]]);
-    const mx=(a[0]+b[0])/2+(k%2?10:-10),my=(a[1]+b[1])/2+(k%2?-12:12);
-    s+='<path d="M'+a[0]+","+a[1]+" Q"+mx+","+my+" "+b[0]+","+b[1]+'" fill="none" stroke="'+c+'" stroke-width="'+(opt.sw||3.2)+'" stroke-linecap="round" stroke-dasharray="'+(opt.dash||"9 6")+'" opacity="0.9"/>';
+    const mx=(a[0]+b[0])/2+(k%2?6:-6),my=(a[1]+b[1])/2+(k%2?-7:7);
+    s+='<path d="M'+a[0]+","+a[1]+" Q"+mx+","+my+" "+b[0]+","+b[1]+'" fill="none" stroke="'+c+'" stroke-width="'+(opt.sw||3)+'" stroke-linecap="round" opacity="0.95"/>';
   }
  });
- s+="</g>";
  pts.forEach((p,pi)=>{
   const q=P(p),isH=p[4]==="h",isP=p[4]==="p";
   if(isP){s+='<circle cx="'+q[0]+'" cy="'+q[1]+'" r="4.5" fill="var(--panel)" stroke="var(--ink2)" stroke-width="1.5"/>';}
@@ -557,7 +569,7 @@ const SEGS=[
 ];
 const MICRO=new Set([1,2,3,4,9,10,11,12,13,14,15,16,17,18]);
 /* 陆地轮廓（手绘示意，[纬度,经度]） */
-const MAIN_LAND=[[69.90,21.60],[69.30,20.00],[69.75,18.30],[69.40,17.90],[69.05,17.15],[68.70,16.55],[68.45,16.90],[68.20,16.15],[68.00,15.55],[67.70,14.60],[67.30,14.30],[66.90,13.70],[66.40,13.00],[65.90,12.30],[65.40,11.80],[64.90,11.50],[64.40,11.30],[63.90,10.55],[63.55,9.60],[63.15,9.20],[62.80,7.60],[62.40,6.40],[62.00,5.60],[61.55,5.00],[61.00,4.70],[60.70,4.85],[60.30,5.00],[59.80,5.30],[59.35,5.55],[59.00,5.80],[58.80,5.55],[58.30,6.30],[58.00,6.90],[58.15,7.60],[58.35,8.20],[58.60,9.20],[59.00,10.05],[59.55,10.40],[59.88,10.45],[59.90,10.72],[59.60,10.95],[59.25,11.02],[59.00,11.20],[58.30,11.60],[57.70,11.90],[57.60,16.50],[58.60,16.90],[59.00,17.40],[59.35,18.45],[59.80,18.70],[60.30,18.20],[60.70,17.30],[61.50,17.60],[62.40,17.60],[63.20,18.40],[63.80,20.20],[64.80,21.30],[65.80,22.20],[67.00,22.10],[68.50,21.80]];
+const MAIN_LAND=[[69.90,21.20],[69.75,18.30],[69.10,17.10],[68.60,16.40],[68.42,16.95],[68.05,15.50],[67.55,14.55],[66.85,13.10],[65.95,12.05],[65.10,11.55],[64.20,11.05],[63.45,9.85],[62.60,7.35],[61.80,5.60],[61.05,4.80],[60.40,5.05],[59.70,5.35],[59.05,5.70],[58.30,6.30],[58.05,7.30],[58.35,8.60],[59.00,10.30],[59.55,10.42],[59.92,10.72],[59.45,11.05],[58.90,11.35],[57.95,12.10],[57.60,15.60],[58.60,17.05],[59.35,18.45],[60.20,18.60],[61.30,17.50],[62.70,18.00],[64.20,20.80],[66.00,22.20],[68.20,21.80]];
 const LOF_LAND=[
  [[68.36,13.60],[68.38,13.90],[68.37,14.20],[68.30,14.45],[68.24,14.62],[68.17,14.46],[68.13,14.20],[68.08,13.95],[68.10,13.70],[68.20,13.52]],
  [[68.12,14.17],[68.14,14.24],[68.10,14.27],[68.07,14.21]],
@@ -568,37 +580,36 @@ const LOF_LAND=[
 ];
 const WOB2='<filter id="wob2"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="11" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="4"/></filter>';
 const L2P=a=>a.map(q=>["",q[0],q[1]]);
-function landD(poly,P){return "M"+poly.map(q=>{const c=P(["",q[0],q[1]]);return c[0].toFixed(1)+" "+c[1].toFixed(1)}).join("L")+"Z"}
+function landD(poly,P){const c=poly.map(q=>P(["",q[0],q[1]])),n=c.length;
+ let d="M"+c[0][0].toFixed(1)+" "+c[0][1].toFixed(1);
+ for(let i=0;i<n;i++){const p0=c[(i-1+n)%n],p1=c[i],p2=c[(i+1)%n],p3=c[(i+2)%n];
+  d+=" C"+(p1[0]+(p2[0]-p0[0])/6).toFixed(1)+" "+(p1[1]+(p2[1]-p0[1])/6).toFixed(1)
+   +" "+(p2[0]-(p3[0]-p1[0])/6).toFixed(1)+" "+(p2[1]-(p3[1]-p1[1])/6).toFixed(1)
+   +" "+p2[0].toFixed(1)+" "+p2[1].toFixed(1)}
+ return d+"Z"}
 function qPath(a,b,bow){const mx=(a[0]+b[0])/2+(b[1]-a[1])*bow,my=(a[1]+b[1])/2-(b[0]-a[0])*bow;return {d:"M"+a[0].toFixed(1)+" "+a[1].toFixed(1)+" Q"+mx.toFixed(1)+" "+my.toFixed(1)+" "+b[0].toFixed(1)+" "+b[1].toFixed(1),mid:[.25*a[0]+.5*mx+.25*b[0],.25*a[1]+.5*my+.25*b[1]]}}
 /* ---- 主图 ---- */
 const OVW=680,OVH=760;
 const P0=proj(OV_NORDIC,44,26,OVW-64,OVH-64);
 const svgO=document.getElementById("overview");
 (function renderMain(){
- let s='<defs>'+WOB2+'</defs>';
+ let s='';
  s+='<rect x="0" y="0" width="'+OVW+'" height="'+OVH+'" fill="var(--sea)" rx="12"/>';
- s+='<g opacity="0.45">';
- for(let x=24;x<OVW;x+=48)s+='<line x1="'+x+'" y1="10" x2="'+x+'" y2="'+(OVH-10)+'" stroke="var(--line)" stroke-width="0.5" stroke-dasharray="1 5"/>';
- for(let y=24;y<OVH;y+=48)s+='<line x1="10" y1="'+y+'" x2="'+(OVW-10)+'" y2="'+y+'" stroke="var(--line)" stroke-width="0.5" stroke-dasharray="1 5"/>';
- s+='</g>';
- s+='<g filter="url(#wob2)">';
- s+='<path d="'+landD(MAIN_LAND,P0)+'" fill="var(--land)" stroke="var(--coast)" stroke-width="1.6"/>';
- LOF_LAND.forEach(p=>{s+='<path d="'+landD(p,P0)+'" fill="var(--land)" stroke="var(--coast)" stroke-width="1.4"/>'});
- SEGS.forEach(seg=>{for(let k=0;k<seg.id.length-1;k++){const a=P0(OV_NORDIC[seg.id[k]]),b=P0(OV_NORDIC[seg.id[k+1]]);const r=qPath(a,b,seg.fly?0.16:(k%2?0.06:-0.06));s+='<path d="'+r.d+'" fill="none" stroke="'+seg.c+'" stroke-width="'+(seg.fly?2.4:3.8)+'" stroke-linecap="round" opacity="'+(seg.fly?0.85:0.9)+'"'+(seg.fly?' stroke-dasharray="4 7"':'')+'/>'}});
- s+='</g>';
- SEGS.forEach(seg=>{for(let k=0;k<seg.id.length-1;k++){if(!seg.fly)continue;const a=P0(OV_NORDIC[seg.id[k]]),b=P0(OV_NORDIC[seg.id[k+1]]);const r=qPath(a,b,0.16);s+='<text x="'+r.mid[0]+'" y="'+r.mid[1]+'" font-size="13" text-anchor="middle">✈️</text>'}});
+ s+='<path d="'+landD(MAIN_LAND,P0)+'" fill="var(--land)" stroke="var(--coast)" stroke-width="1.2"/>';
+ LOF_LAND.forEach(p=>{s+='<path d="'+landD(p,P0)+'" fill="var(--land)" stroke="var(--coast)" stroke-width="1.1"/>'});
+ SEGS.forEach(seg=>{for(let k=0;k<seg.id.length-1;k++){const a=P0(OV_NORDIC[seg.id[k]]),b=P0(OV_NORDIC[seg.id[k+1]]);const r=qPath(a,b,seg.fly?0.16:(k%2?0.05:-0.05));s+='<path d="'+r.d+'" fill="none" stroke="'+seg.c+'" stroke-width="'+(seg.fly?2:3.6)+'" stroke-linecap="round" opacity="'+(seg.fly?0.7:0.95)+'"'+(seg.fly?' stroke-dasharray="5 6"':'')+'/>'}});
+ SEGS.forEach(seg=>{for(let k=0;k<seg.id.length-1;k++){if(!seg.fly)continue;const a=P0(OV_NORDIC[seg.id[k]]),b=P0(OV_NORDIC[seg.id[k+1]]);const r=qPath(a,b,0.16);s+='<text x="'+r.mid[0]+'" y="'+r.mid[1]+'" font-size="12" text-anchor="middle">✈️</text>'}});
  const badged=new Set();
  SEGS.forEach(seg=>{const i0=seg.id[0];if(badged.has(i0))return;badged.add(i0);const q=P0(OV_NORDIC[i0]);
-  s+='<circle cx="'+q[0]+'" cy="'+(q[1]-15)+'" r="9" fill="'+seg.c+'" stroke="var(--panel)" stroke-width="1.5"/>';
-  s+='<text x="'+q[0]+'" y="'+(q[1]-11.8)+'" text-anchor="middle" font-size="8.5" font-weight="700" fill="#fff">'+seg.day+'</text>'});
+  s+='<circle cx="'+q[0]+'" cy="'+(q[1]-14)+'" r="8" fill="'+seg.c+'" stroke="var(--panel)" stroke-width="1.2"/>';
+  s+='<text x="'+q[0]+'" y="'+(q[1]-11)+'" text-anchor="middle" font-size="8" font-weight="700" fill="#fff">'+seg.day+'</text>'});
  OV_NORDIC.forEach(p=>{const q=P0(p),isH=p[3]==="h";
-  if(isH){s+='<circle cx="'+q[0]+'" cy="'+q[1]+'" r="10" fill="none" stroke="var(--accent)" stroke-width="1.2" stroke-dasharray="3 3"/>';}
-  s+='<circle cx="'+q[0]+'" cy="'+q[1]+'" r="'+(isH?6:4.2)+'" fill="'+(isH?"var(--accent)":"var(--ink)")+'" stroke="var(--panel)" stroke-width="1.4"/>'});
+  s+='<circle cx="'+q[0]+'" cy="'+q[1]+'" r="'+(isH?5.5:3.6)+'" fill="'+(isH?"var(--accent)":"var(--ink)")+'" stroke="var(--panel)" stroke-width="1.6"/>'});
  OV_NORDIC.forEach((p,i)=>{const q=P0(p);const anch=q[0]>OVW-95?"end":(q[0]<95?"start":"middle");
   const nm=p[0].replace(" 🏨","");const hq=OV_Q[nm]||nm;
-  s+='<a target="_blank" href="'+M(hq)+'"><text class="'+(MICRO.has(i)?"micro":"")+'" x="'+q[0]+'" y="'+(q[1]-11)+'" text-anchor="'+anch+'" font-size="12" fill="var(--ink)" font-family="Kaiti SC,STKaiti,KaiTi,serif" style="paint-order:stroke" stroke="var(--sea)" stroke-width="3.5" stroke-linejoin="round">'+nm+(p[3]==="h"?' <tspan fill="var(--accent)">🏨</tspan>':"")+'</text></a>'});
+  s+='<a target="_blank" href="'+M(hq)+'"><text class="'+(MICRO.has(i)?"micro":"")+'" x="'+q[0]+'" y="'+(q[1]-11)+'" text-anchor="'+anch+'" font-size="11.5" fill="var(--ink)" style="paint-order:stroke" stroke="var(--panel)" stroke-width="3.2" stroke-linejoin="round">'+nm+(p[3]==="h"?' <tspan fill="var(--accent)">🏨</tspan>':"")+'</text></a>'});
  const la=P0(["",68.60,13.55]);
- s+='<text class="lofann" x="'+la[0]+'" y="'+la[1]+'" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--accent)" font-family="Kaiti SC,STKaiti,KaiTi,serif">罗弗敦 🔍</text>';
+ s+='<text class="lofann" x="'+la[0]+'" y="'+la[1]+'" text-anchor="middle" font-size="11.5" font-weight="700" fill="var(--accent)" style="paint-order:stroke" stroke="var(--panel)" stroke-width="3">罗弗敦 🔍</text>';
  svgO.innerHTML=s;
 })();
 /* ---- 罗弗敦小图 ---- */
@@ -610,16 +621,14 @@ const IOFF={"雷讷":[0,-4],"奥镇 Å":[0,12],"Ramberg 🏨":[0,12],"Nusfjord �
  const P2=proj(L2P(IFLAT),10,10,230,148);
  const svgI=document.getElementById("inset");
  let t='<rect x="0" y="0" width="250" height="168" fill="var(--sea)" rx="10"/>';
- t+='<g filter="url(#wob2)">';
- LOF_LAND.forEach(p=>{t+='<path d="'+landD(p,P2)+'" fill="var(--land)" stroke="var(--coast)" stroke-width="1.2"/>'});
- ISEGS.forEach(seg=>{for(let k=0;k<seg.id.length-1;k++){const a=P2(OV_NORDIC[seg.id[k]]),b=P2(OV_NORDIC[seg.id[k+1]]);const r=qPath(a,b,k%2?0.05:-0.05);t+='<path d="'+r.d+'" fill="none" stroke="'+seg.c+'" stroke-width="2.6" stroke-linecap="round" opacity="0.9"/>'}});
- t+='</g>';
+ LOF_LAND.forEach(p=>{t+='<path d="'+landD(p,P2)+'" fill="var(--land)" stroke="var(--coast)" stroke-width="1"/>'});
+ ISEGS.forEach(seg=>{for(let k=0;k<seg.id.length-1;k++){const a=P2(OV_NORDIC[seg.id[k]]),b=P2(OV_NORDIC[seg.id[k+1]]);const r=qPath(a,b,k%2?0.05:-0.05);t+='<path d="'+r.d+'" fill="none" stroke="'+seg.c+'" stroke-width="2.4" stroke-linecap="round" opacity="0.95"/>'}});
  INSET_IDX.forEach(i=>{const p=OV_NORDIC[i],q=P2(p),isH=p[3]==="h";
   t+='<circle cx="'+q[0]+'" cy="'+q[1]+'" r="'+(isH?3.4:2.4)+'" fill="'+(isH?"var(--accent)":"var(--ink)")+'" stroke="var(--panel)" stroke-width="1"/>'});
  INSET_IDX.forEach(i=>{const p=OV_NORDIC[i],q=P2(p);const off=IOFF[p[0]]||[0,-4];
   const anch=off[2]||(q[0]>205?"end":(q[0]<45?"start":"middle"));
   const nm=p[0].replace(" 🏨","");
-  t+='<text x="'+(q[0]+off[0])+'" y="'+(q[1]+off[1])+'" text-anchor="'+anch+'" font-size="8.5" fill="var(--ink)" font-family="Kaiti SC,STKaiti,KaiTi,serif" style="paint-order:stroke" stroke="var(--sea)" stroke-width="2.5" stroke-linejoin="round">'+nm+'</text>'});
+  t+='<text x="'+(q[0]+off[0])+'" y="'+(q[1]+off[1])+'" text-anchor="'+anch+'" font-size="8.5" fill="var(--ink)" style="paint-order:stroke" stroke="var(--panel)" stroke-width="2.5" stroke-linejoin="round">'+nm+'</text>'});
  t+='<text x="12" y="160" font-size="8.5" fill="var(--ink2)">↑ 10.2 还车后 ✈ Evenes → 奥斯陆</text>';
  svgI.innerHTML=t;
  svgI.addEventListener("click",goLof);
@@ -687,12 +696,12 @@ function renderDayMap(i){
    "Mannen Lofoten":[68.14,13.62,"p"],"Haukland Beach":[68.148,13.636,"p"],"Uttakleiv Beach":[68.183,13.591,"p"],"Ramberg beach":[68.094,13.257,"h"],"Ramberg":[68.094,13.257,"h"],
    "Eggum Beach":[68.30,13.749,"p"],"Kiwi Leknes":[68.153,13.606,"p"],"Lofotmuseet Kabelvåg":[68.21,14.477,"p"],"Lofotr Vikingmuseum":[68.245,13.758,"p"],"Radisson Red Oslo Airport Gardermoen":[60.19,11.10,"h"],"Oslo Airport Gardermoen Global Blue":[60.19,11.10,"p"],
    "Gamla Stan":[59.325,18.071,"p"],"Den Gyldene Freden":[59.325,18.074,"p"],"Royal Palace Stockholm":[59.327,18.073,"p"],"Nobel Prize Museum Stockholm":[59.324,18.070,"p"],"Vasamuseet":[59.329,18.092,"p"],"Drottninggatan Stockholm":[59.332,18.062,"p"],"Frantzén Stockholm":[59.334,18.072,"p"],
-   "Stockholm City Hall":[59.328,18.054,"h"],"T-Centralen metro station":[59.332,18.061,"p"],"NK Stockholm":[59.333,18.070,"p"],"Skansen":[59.321,18.101,"p"],"Hobo Stockholm":[59.333,18.059,"h"],"Stockholm Arlanda Airport":[59.651,17.921,"p"],"Stockholm Arlanda Airport T5":[59.651,17.921,"p"],"Arlanda Global Blue":[59.651,17.921,"p"],"Istanbul Airport":[41.26,28.74,"p"],"Suvarnabhumi Airport":[13.69,100.75,"p"],"Suvarnabhumi Airport Departure Hall":[13.69,100.75,"p"],"厦门高崎国际机场 T3":[24.54,118.13,"p"],"厦门高崎国际机场":[24.54,118.13,"p"]}[n];
+   "Stockholm City Hall":[59.328,18.054,"h"],"T-Centralen metro station":[59.332,18.061,"p"],"NK Stockholm":[59.333,18.070,"p"],"Skansen":[59.321,18.101,"p"],"Hobo Stockholm":[59.333,18.059,"h"],"Stockholm Arlanda Airport":[59.651,17.921,"p"],"Stockholm Arlanda Airport T5":[59.651,17.921,"p"],"Arlanda Global Blue":[59.651,17.921,"p"],"Istanbul Airport":[41.26,28.74,"p"],"Suvarnabhumi Airport":[13.69,100.75,"p"],"Suvarnabhumi Airport Departure Hall":[13.69,100.75,"p"],"Suvarnabhumi Airport":[13.69,100.75,"p"],"Wat Phra Kaew Grand Palace":[13.750,100.491,"p"],"Wat Pho Bangkok":[13.747,100.493,"p"],"Wat Arun Bangkok":[13.744,100.489,"p"],"Yaowarat Chinatown Bangkok":[13.741,100.510,"p"],"Tha Maharaj Bangkok":[13.756,100.489,"p"],"Airport Rail Link Phaya Thai Station":[13.762,100.537,"p"],"Suvarnabhumi Airport Left Luggage":[13.69,100.75,"p"],"厦门高崎国际机场 T3":[24.54,118.13,"p"],"厦门高崎国际机场":[24.54,118.13,"p"]}[n];
    if(m)add(n,m[0],m[1],m[2]);
  });
  const o=D.route.o,d=D.route.d;
- add(o,{"Tromsø Airport":69.683,"Oslo Airport Gardermoen":60.19,"Oslo S stasjon":59.911,"MUNCH Oslo":59.906,"Bergen Fish Market":60.395,"Fjellheisen Tromsø":69.634,"Svolvær":68.234,"Nusfjord":68.012,"Ramberg":68.094,"Hobo Stockholm":59.333,"Stockholm City Hall":59.328}[o]||0,{"Tromsø Airport":18.918,"Oslo Airport Gardermoen":11.10,"Oslo S stasjon":10.752,"MUNCH Oslo":10.766,"Bergen Fish Market":5.323,"Fjellheisen Tromsø":18.999,"Svolvær":14.565,"Nusfjord":13.509,"Ramberg":13.257,"Hobo Stockholm":18.059,"Stockholm City Hall":18.054}[o]||0,"h");
- add(d,{"Scandic Go Grensen Oslo":59.916,"Radisson Blu Royal Hotel Bergen":60.396,"Radisson Blu Hotel Tromsø":69.641,"Scandic Svolvær":68.234,"Nusfjord":68.012,"Ramberg beach":68.094,"Radisson Red Oslo Airport Gardermoen":60.19,"Hobo Stockholm":59.333,"Monteliusvägen Stockholm":59.318,"Istanbul Airport":41.26,"厦门高崎国际机场":24.54,"Bergen Airport BGO":60.293,"Harstad/Narvik Evenes Airport":68.49}[d]||0,{"Scandic Go Grensen Oslo":10.746,"Radisson Blu Royal Hotel Bergen":5.322,"Radisson Blu Hotel Tromsø":18.959,"Scandic Svolvær":14.565,"Nusfjord":13.509,"Ramberg beach":13.257,"Radisson Red Oslo Airport Gardermoen":11.10,"Hobo Stockholm":18.059,"Monteliusvägen Stockholm":18.061,"Istanbul Airport":28.74,"厦门高崎国际机场":118.13,"Bergen Airport BGO":5.218,"Harstad/Narvik Evenes Airport":16.68}[d]||0,"h");
+ add(o,{"Tromsø Airport":69.683,"Oslo Airport Gardermoen":60.19,"Oslo S stasjon":59.911,"MUNCH Oslo":59.906,"Bergen Fish Market":60.395,"Fjellheisen Tromsø":69.634,"Svolvær":68.234,"Nusfjord":68.012,"Ramberg":68.094,"Hobo Stockholm":59.333,"Stockholm City Hall":59.328,"Suvarnabhumi Airport":13.69}[o]||0,{"Tromsø Airport":18.918,"Oslo Airport Gardermoen":11.10,"Oslo S stasjon":10.752,"MUNCH Oslo":10.766,"Bergen Fish Market":5.323,"Fjellheisen Tromsø":18.999,"Svolvær":14.565,"Nusfjord":13.509,"Ramberg":13.257,"Hobo Stockholm":18.059,"Stockholm City Hall":18.054,"Suvarnabhumi Airport":100.75}[o]||0,"h");
+ add(d,{"Scandic Go Grensen Oslo":59.916,"Radisson Blu Royal Hotel Bergen":60.396,"Radisson Blu Hotel Tromsø":69.641,"Scandic Svolvær":68.234,"Nusfjord":68.012,"Ramberg beach":68.094,"Radisson Red Oslo Airport Gardermoen":60.19,"Hobo Stockholm":59.333,"Monteliusvägen Stockholm":59.318,"Istanbul Airport":41.26,"厦门高崎国际机场":24.54,"Bergen Airport BGO":60.293,"Harstad/Narvik Evenes Airport":68.49,"Suvarnabhumi Airport":13.69}[d]||0,{"Scandic Go Grensen Oslo":10.746,"Radisson Blu Royal Hotel Bergen":5.322,"Radisson Blu Hotel Tromsø":18.959,"Scandic Svolvær":14.565,"Nusfjord":13.509,"Ramberg beach":13.257,"Radisson Red Oslo Airport Gardermoen":11.10,"Hobo Stockholm":18.059,"Monteliusvägen Stockholm":18.061,"Istanbul Airport":28.74,"厦门高崎国际机场":118.13,"Bergen Airport BGO":5.218,"Harstad/Narvik Evenes Airport":16.68,"Suvarnabhumi Airport":100.75}[d]||0,"h");
  const order=[idx[o],...(D.route.w||[]).map(n=>idx[n]).filter(x=>x!==undefined),idx[d]].filter((v,ix,ar)=>v!==undefined&&ar.indexOf(v)===ix);
  const chain=order.map(ix=>ix);
  const links=[chain];
