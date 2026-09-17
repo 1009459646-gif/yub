@@ -1,0 +1,9 @@
+// Cloudflare Workers 配置：静态站点（单文件手册）
+// 部署命令在 Dashboard 中填: npx wrangler deploy
+{
+  "name": "yub",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./public"
+  }
+}

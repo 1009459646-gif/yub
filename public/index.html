@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="yub 的挪威+瑞典 14+ 天旅行手册（2026.9.23–10.7）">
+<title>北欧行动手册 · 2026.9.23–10.7</title>
+<style>
+:root{
+  --bg:#faf6ef; --panel:#ffffff; --ink:#2b2a28; --ink2:#6b675f; --line:#e4ddd0;
+  --accent:#0f6b5c; --risk:#c0392b; --ok:#1e8e5a; --gold:#b8860b;
+  --day1:#0f6b5c;--day2:#c0392b;--day3:#2471a3;--day4:#b8860b;--day5:#7d3c98;--day6:#117a65;
+  --day7:#d35400;--day8:#2874a6;--day9:#a04000;--day10:#1e8449;
+  --shadow:0 2px 10px rgba(60,50,30,.08);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#14181d; --panel:#1d232b; --ink:#e8e4dc; --ink2:#a8a294; --line:#313a45;
+    --accent:#3fb99e; --risk:#e57368; --ok:#4dbe87; --gold:#d4a72c;
+    --shadow:0 2px 12px rgba(0,0,0,.4);
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.65;padding-bottom:60px}
+h1,h2,h3,.hand{font-family:"Kaiti SC","STKaiti","KaiTi","FZKai-Z03","BiauKai",serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+nav.topnav{position:sticky;top:0;z-index:50;background:var(--panel);border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+nav.topnav .wrap{display:flex;gap:4px;overflow-x:auto;padding:8px 16px}
+nav.topnav a{flex:0 0 auto;text-decoration:none;color:var(--ink2);font-size:14px;padding:4px 10px;border-radius:14px;white-space:nowrap}
+nav.topnav a:hover{color:var(--accent);background:var(--bg)}
+header.hero{padding:28px 0 8px}
+header.hero h1{font-size:30px;letter-spacing:1px}
+header.hero .sub{color:var(--ink2);font-size:14px;margin-top:4px}
+section{padding:26px 0 6px}
+h2.sec{font-size:22px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+h2.sec .num{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border:2px solid var(--ink);border-radius:50% 46% 52% 48%;font-size:14px;transform:rotate(-3deg)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow);margin-bottom:12px}
+/* 此刻关注 */
+#next-card{background:linear-gradient(135deg,var(--accent),#155e50);color:#fff;border:none}
+@media (prefers-color-scheme: dark){#next-card{background:linear-gradient(135deg,#155e50,#0d3a33)}}
+#next-card .lbl{font-size:13px;opacity:.85;letter-spacing:2px}
+#next-card .evt{font-size:20px;font-weight:700;margin:4px 0}
+#next-card .evt-time{font-size:13px;opacity:.9}
+.count{display:flex;gap:10px;justify-content:center;margin:14px 0 6px;flex-wrap:wrap}
+.count .cell{background:rgba(255,255,255,.14);border-radius:12px;padding:8px 4px;min-width:74px;text-align:center}
+.count .num{font-size:34px;font-weight:800;font-variant-numeric:tabular-nums;display:block;line-height:1.1}
+.count .unit{font-size:12px;opacity:.85}
+#next-card .tznote{font-size:12px;opacity:.8;text-align:center}
+/* 地图 */
+.mapbox{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px;box-shadow:var(--shadow)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:12.5px;color:var(--ink2);padding:8px 4px 2px}
+.legend span i{display:inline-block;width:18px;height:3px;border-radius:2px;margin-right:5px;vertical-align:middle}
+/* 表格 */
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px dashed var(--line);vertical-align:top}
+th{color:var(--ink2);font-weight:600;white-space:nowrap}
+.tz{color:var(--ink2);font-size:11.5px;white-space:nowrap}
+.chip{display:inline-block;font-size:11px;padding:1px 8px;border-radius:10px;margin-left:6px;vertical-align:1px;white-space:nowrap}
+.chip.need{background:var(--risk);color:#fff}
+.chip.done{background:var(--ok);color:#fff}
+.chip.tbd{background:var(--gold);color:#fff}
+a.maplink{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+/* 逐日 */
+details.day{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);margin-bottom:12px;overflow:hidden}
+details.day summary{list-style:none;cursor:pointer;padding:13px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+details.day summary::-webkit-details-marker{display:none}
+details.day summary .dd{font-size:20px;font-weight:700;min-width:58px}
+details.day summary .dt{flex:1;font-size:15px;font-weight:600}
+details.day summary .hotel{font-size:12px;color:var(--ink2);width:100%;padding-left:2px}
+details.day summary .arrow{color:var(--ink2);transition:transform .2s}
+details.day[open] summary .arrow{transform:rotate(90deg)}
+.daybody{padding:0 16px 16px;border-top:1px dashed var(--line)}
+.tzline{font-size:12px;color:var(--ink2);padding:8px 0 2px}
+.tl{margin:6px 0}
+.tl .row{display:flex;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line)}
+.tl .row:last-child{border-bottom:none}
+.tl .t{flex:0 0 86px;color:var(--accent);font-weight:700;font-variant-numeric:tabular-nums;font-size:13.5px}
+.tl .c{flex:1;font-size:14px}
+.tl .c small{display:block;color:var(--ink2);font-size:12px;margin-top:1px}
+.risk{background:rgba(192,57,43,.09);border:1px solid var(--risk);border-radius:10px;padding:10px 12px;margin:10px 0;font-size:13.5px}
+.risk b{color:var(--risk)}
+@media (prefers-color-scheme: dark){.risk{background:rgba(229,115,104,.1)}}
+.note{background:rgba(184,134,11,.08);border:1px dashed var(--gold);border-radius:10px;padding:8px 12px;margin:10px 0;font-size:13px}
+.dayactions{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;text-decoration:none;font-size:13.5px;padding:8px 14px;border-radius:20px;border:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+/* 待办 */
+ol.todo{padding-left:22px}
+ol.todo li{padding:5px 0;font-size:14.5px;border-bottom:1px dashed var(--line)}
+ol.todo li:last-child{border-bottom:none}
+/* 贴士 */
+details.tip{border:1px solid var(--line);border-radius:12px;margin-bottom:8px;background:var(--panel)}
+details.tip summary{cursor:pointer;padding:11px 14px;font-weight:600;font-size:14.5px;list-style:none}
+details.tip summary::before{content:"▸ ";color:var(--accent)}
+details.tip[open] summary::before{content:"▾ "}
+details.tip .body{padding:0 14px 12px;font-size:13.5px;color:var(--ink)}
+details.tip .body p{margin:5px 0}
+footer{text-align:center;color:var(--ink2);font-size:12px;padding:30px 0 10px}
+</style>
+</head>
+<body>
+
+<nav class="topnav"><div class="wrap">
+  <a href="#now">此刻关注</a><a href="#map">路线地图</a><a href="#orders">机票·酒店·门票</a><a href="#days">逐日行程</a><a href="#todo">待办</a><a href="#tips">实用贴士</a>
+</div></nav>
+
+<div class="wrap">
+
+<header class="hero">
+  <h1>北欧行动手册</h1>
+  <div class="sub">挪威 · 瑞典 · 2 人 · 2026 年 9 月 23 日 → 10 月 7 日（15 天）· 厦门出发</div>
+</header>
+
+<!-- ═══════════ 1 此刻关注 ═══════════ -->
+<section id="now">
+  <h2 class="sec hand"><span class="num">1</span>此刻关注</h2>
+  <div class="card" id="next-card">
+    <div class="lbl">下一个行程事件</div>
+    <div class="evt" id="next-evt">—</div>
+    <div class="evt-time" id="next-evt-time">—</div>
+    <div class="count" id="count"></div>
+    <div class="tznote">倒计时已按事件当地时区精确计算，跨时区打开不会算错</div>
+  </div>
+</section>
+
+<!-- ═══════════ 2 地图 ═══════════ -->
+<section id="map">
+  <h2 class="sec hand"><span class="num">2</span>行程总览 · 手绘路线</h2>
+  <div class="mapbox">
+    <svg id="overview" viewBox="0 0 680 760" role="img" aria-label="北欧行程总览地图"></svg>
+    <div class="legend" id="legend"></div>
+    <p style="font-size:12px;color:var(--ink2);padding:6px 4px 0">虚线为官方航线/铁路走向的示意画法，颜色对应日期；带 🏨 的为过夜地。点击地点名可唤起 Google 地图导航。</p>
+  </div>
+</section>
+
+<!-- ═══════════ 3 订单 ═══════════ -->
+<section id="orders">
+  <h2 class="sec hand"><span class="num">3</span>已确认的机票 · 租车 · 酒店 · 门票</h2>
+
+  <div class="card">
+    <h3 style="font-size:16px;margin-bottom:8px">✈️ 机票（9 段，全部已出票）</h3>
+    <div style="overflow-x:auto"><table id="flight-table">
+      <tr><th>日期</th><th>航班</th><th>航段</th><th>起降（当地时间）</th><th>备注</th></tr>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <h3 style="font-size:16px;margin-bottom:8px">🚗 租车</h3>
+    <table>
+      <tr><td>Hertz · 紧凑型 SUV</td><td><a class="maplink" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Harstad%2FNarvik%20Evenes%20Airport%20Hertz">Harstad/Narvik Evenes 机场</a></td><td>9.29 约18:30 取车 → 10.2 约17:30 还车（还车前加满油）</td></tr>
+    </table>
+    <p style="font-size:12.5px;color:var(--ink2);margin-top:6px">取车材料：主驾驾照原件 + 驾照翻译认证件 + 主驾名下信用卡。北欧 9 月底昼短，夜路注意驯鹿出没。</p>
+  </div>
+
+  <div class="card">
+    <h3 style="font-size:16px;margin-bottom:8px">🏨 酒店（9 晚，全部已订 · 地址电话待截图补全）</h3>
+    <div style="overflow-x:auto"><table id="hotel-table">
+      <tr><th>日期</th><th>酒店</th><th>城市</th><th>地址 / 电话</th></tr>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <h3 style="font-size:16px;margin-bottom:8px">🎫 门票 / 预约</h3>
+    <div style="overflow-x:auto"><table>
+      <tr><td>挪威缩影套票（火车+弗洛姆铁路+纳柔依游船+巴士）</td><td>9.26</td><td><span class="chip done">已购</span></td></tr>
+      <tr><td>蒙克博物馆 MUNCH 定时票 · 220 NOK</td><td>9.25</td><td><span class="chip need">需提前官网购票</span></td></tr>
+      <tr><td>特罗姆瑟极光追猎团 · 约 20:00 出发</td><td>9.28</td><td><span class="chip need">需预订</span></td></tr>
+      <tr><td>汉萨博物馆 · 160 NOK（展览在 Schøtstuene，Øvregaten 50）</td><td>9.27</td><td><span class="chip done">现场可购</span></td></tr>
+      <tr><td>Lofotr 维京博物馆 · 210 NOK（周二–周六 11:00–17:00）</td><td>10.2</td><td><span class="chip done">现场可购</span></td></tr>
+      <tr><td>瓦萨沉船博物馆 · 约 190 SEK</td><td>10.4</td><td><span class="chip done">现场可购</span></td></tr>
+      <tr><td>斯德哥尔摩市政厅建筑导览 · 150 SEK（登塔 10 月不开放）</td><td>10.5</td><td><span class="chip need">先到先得，建议开门排队</span></td></tr>
+    </table></div>
+  </div>
+</section>
+
+<!-- ═══════════ 4 逐日行程 ═══════════ -->
+<section id="days">
+  <h2 class="sec hand"><span class="num">4</span>逐日行程</h2>
+  <p style="font-size:12.5px;color:var(--ink2);margin-bottom:10px">时间均为当天所在时区的当地时间 · 点地名唤起导航 · <span class="chip need">需预订</span>=要提前订票/订位 · 点「当日路线」展开小地图</p>
+  <div id="days-box"></div>
+</section>
+
+<!-- ═══════════ 5 待办 ═══════════ -->
+<section id="todo">
+  <h2 class="sec hand"><span class="num">5</span>待办清单</h2>
+  <div class="card">
+    <ol class="todo">
+      <li>预订 9.28 特罗姆瑟极光追猎团（20:00 出发，含热饮简餐）</li>
+      <li>蒙克博物馆官网购 9.25 定时票（220 NOK/人）</li>
+      <li>餐厅预约：特罗姆瑟 Fiskekompaniet 或 Smak；卑尔根 Bryggeloftet；斯德哥尔摩 Den Gyldene Freden</li>
+      <li>9.27 前：Widerøe 官网为 WF630 网上值机，并确认卑尔根段是否全程手提行李（托运=赶不上日落计划，见 D5）</li>
+      <li>WF867 / DY359 / DY804 提前 24–48h 网上值机</li>
+      <li>下载 App：Vy（挪威火车）、Entur（挪威公交）、YR 天气、Aurora Forecast（极光 KP 值）、Arlanda Express</li>
+      <li>Google 地图下载「奥斯陆 / 卑尔根 / 特罗姆瑟 / 罗弗敦 / 斯德哥尔摩」离线包</li>
+      <li>办理北欧+泰国 eSIM 流量（15 天）</li>
+      <li>购买旅游保险（含自驾与户外徒步）</li>
+      <li>确认 Hertz 取车材料：驾照翻译认证件、主驾信用卡</li>
+      <li>准备曼谷机场过夜装备：颈枕、耳塞、眼罩、薄毯</li>
+      <li>准备一个透明文件袋装全部退税单据+小票，全程随身不托运</li>
+      <li>列出 10.2 Leknes 超市采购清单（自热晚餐食材+伴手礼）</li>
+      <li>把 7 家酒店订单截图发给小鸥（补全本页地址电话）</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ═══════════ 6 贴士 ═══════════ -->
+<section id="tips">
+  <h2 class="sec hand"><span class="num">6</span>实用贴士</h2>
+
+  <details class="tip" open><summary>🔐 退税：挪威、瑞典是两套独立体系</summary><div class="body">
+    <p><b>挪威</b>：不属于欧盟。同店单笔 ≥315 NOK 可开退税单，必须在<b>离开挪威时（10.3 奥斯陆机场）</b>由挪威海关盖章，到瑞典无法补办。实际到手约 14–18%。</p>
+    <p><b>瑞典</b>：欧盟成员。同店单笔 ≥200 SEK，在<b>离开欧盟时（10.6 阿兰机场）</b>瑞典海关盖章。</p>
+    <p>两套单据最后都在阿兰机场 T5 Global Blue 柜台领钱——推荐支付宝退款（快、手续费低）。海关查验前<b>商品不能拆封使用</b>，保留吊牌；大件冲锋衣想直接穿走也要带好包装供查验。所有单据+小票拍照存档。</p>
+  </div></details>
+
+  <details class="tip"><summary>🚆 挪威缩影（9.26）行李与座位</summary><div class="body">
+    <p>套票含免费自带行李（1 大箱+1 随身包，自己搬运）；弗洛姆小火车空间小，建议 24 寸及以下。米达尔→弗洛姆下山方向<b>坐右侧</b>看肖斯瀑布最佳。全天赶路，火车/游船餐食少且贵，自备零食和水。</p>
+  </div></details>
+
+  <details class="tip"><summary>💳 支付与物价</summary><div class="body">
+    <p>挪威、瑞典基本无现金社会，全刷卡（Visa/Master），无需兑换现金。超市推荐 Kiwi、Rema1000、Coop。北欧物价约为国内 2–3 倍，餐厅午餐比晚餐便宜 30–40%，超市是省钱关键。</p>
+  </div></details>
+
+  <details class="tip"><summary>🛍️ 购物与营业时间</summary><div class="body">
+    <p>挪威商店周一–周六 10:00–17:00（周四延至 19:00），<b>周日基本关门</b>——9.27 卑尔根、10.4 斯德哥尔摩是周日，别指望购物。</p>
+    <p>户外装备：<b>奥斯陆 9.25 周五货最全</b>——Karl Johans 大街 HH 旗舰店、Bergans、Sport1 集合店；始祖鸟 Nedre Slottsgate 25；攀山鼠 Akersgata 43。卑尔根：布吕根 The Tur Shop。特罗姆瑟：Bergans 港口店补极地厚件。斯德哥尔摩 10.5 周一全营业：NK 百货、Fjällräven 旗舰店（Hötorget 附近）、Åhléns。</p>
+  </div></details>
+
+  <details class="tip"><summary>🌌 极光观测（共 5 晚机会）</summary><div class="body">
+    <p>9 月底–10 月初特罗姆瑟（2 晚）与罗弗敦（3 晚）均在极光带内。看到极光的三个条件：晴空、无光污染、KP≥2。用 YR 查云量、Aurora Forecast 查 KP 值；市区灯笼多，罗弗敦海滩是更好的观测点。追猎团一般 20:00–24:00，穿最厚的 layer，静止等 10 分钟眼睛适应。</p>
+  </div></details>
+
+  <details class="tip"><summary>🚗 E10 自驾要点（罗弗敦 3.5 天）</summary><div class="body">
+    <p>全程 E10，路况好但<b>秋季风大、昼夜温差大</b>；傍晚后注意<b>驯鹿/羊横穿</b>；单车道桥会车让行；限速一般 60–80 km/h，测速多。加油：CircleK/Esso 自助刷卡。停车：各景点均有免费/投币停车场。9 月底日落约 18:30–19:00，徒步务必留足天光余量。</p>
+  </div></details>
+
+  <details class="tip"><summary>✈️ 曼谷两晚一日的转机须知</summary><div class="body">
+    <p><b>去程 9.23</b>：11:15 落地后不入境远行，素万那普陆侧 24 小时开放，B1 层有美食街与便利店；21:00 前后到出发层办 TG954 值机。厦航联程可尝试行李直挂奥斯陆，值机时确认。</p>
+    <p><b>回程 10.7</b>：⚠️ 土航与 MF854 为<b>两张独立订单</b>，行李不能直挂：09:40 落地 → 入境 → 提行李 → MF 柜台重新值机（起飞前 60 分钟关闭）→ 出境。正常 2.5h 够用，但土航晚点会连锁——回程尽量少托运，并跟踪前序航班动态。</p>
+  </div></details>
+
+  <details class="tip"><summary>📅 已核对的关键开放信息（2026 年 9–10 月）</summary><div class="body">
+    <p>蒙克博物馆：全年无休（5.1 除外），周五至 21:00，成人 220 NOK，需官网定时票。</p>
+    <p>汉萨博物馆：5.1–10.31 每日 10:00–18:00，160 NOK；主馆翻修中，展览在 Schøtstuene。</p>
+    <p>Lofotr 维京博物馆：9.16–10.31 周二–周六 11:00–17:00（周一闭馆），成人 210 NOK。</p>
+    <p>罗弗敦博物馆（卡伯尔沃格）：秋季 11:00–15:00（以现场为准）。</p>
+    <p>瓦萨博物馆：9–5 月每日 10:00–17:00，10 月成人约 190 SEK。</p>
+    <p>市政厅：<b>登塔仅 5–9 月开放</b>；建筑导览全年有，英文场约 10:00/12:00/14:00，150 SEK，先到先得。</p>
+  </div></details>
+</section>
+
+<footer>本页为公开手册 · 不含任何确认号与证件信息 · 由小鸥 ✈️ 为 yub 制作</footer>
+</div>
+
+<script>
+/* ===================== 数据层 ===================== */
+const TZ_NOME="欧洲中部夏令时 UTC+2", TZ_CN="中国标准时间 UTC+8", TZ_TH="泰国 UTC+7", TZ_TR="土耳其 UTC+3";
+const FLIGHTS=[
+ ["9.23 三","MF853 厦门航空","厦门高崎 T3 → 曼谷素万那普","08:45 → 11:15",TZ_CN+" → "+TZ_TH,"联程套餐第一程"],
+ ["9.24 四","TG954 泰国航空","曼谷素万那普 → 奥斯陆","00:05 → 07:25",TZ_TH+" → "+TZ_NOME,"联程套餐第二程"],
+ ["9.27 日","WF630 威德罗","卑尔根 Flesland → 特罗姆瑟","20:15 → 22:20",TZ_NOME,"⚠️ 托运柜台 19:35 关闭"],
+ ["9.29 二","WF867 威德罗","特罗姆瑟 → 埃沃内斯","16:45 → 18:05",TZ_NOME,"经停安德内斯 20 分钟"],
+ ["10.2 五","DY359 挪威穿梭","埃沃内斯 → 奥斯陆","21:25 → 23:10",TZ_NOME,"当天还车后出发"],
+ ["10.3 六","DY804 挪威穿梭","奥斯陆 → 斯德哥尔摩","07:40 → 08:40",TZ_NOME,"⚠️ 先退税后托运"],
+ ["10.6 二","TK1794 土耳其航空","斯德哥尔摩 ARN → 伊斯坦布尔","11:05 → 15:45",TZ_NOME+" → "+TZ_TR,""],
+ ["10.6 二","TK060 土耳其航空","伊斯坦布尔 → 曼谷","20:15 → 次日 09:40",TZ_TR+" → "+TZ_TH,"与 TK1794 联程"],
+ ["10.7 三","MF854 厦门航空","曼谷 → 厦门高崎","12:15 → 16:35",TZ_TH+" → "+TZ_CN,"⚠️ 与土航为两张独立订单"]
+];
+const HOTELS=[
+ ["9.24–9.26","Scandic Go Grensen","奥斯陆","待补截图"],
+ ["9.26–9.27","Radisson Blu Royal Hotel","卑尔根（布吕根）","待补截图"],
+ ["9.27–9.29","Radisson Blu Hotel Tromsø","特罗姆瑟","Fredrik Langes gate 2 · 电话待补"],
+ ["9.29–9.30","Scandic Svolvær","斯沃尔维尔","待补截图"],
+ ["9.30–10.1","Nusfjord Village & Resort","Nusfjord","待补截图"],
+ ["10.1–10.2","Arctic Resort Lofoten（Rorbu 小木屋）","Ramberg","待补截图"],
+ ["10.2–10.3","Radisson Red Oslo Airport","奥斯陆机场 Gardermoen","待补截图"],
+ ["10.3–10.6","Hobo Stockholm","斯德哥尔摩","待补截图"],
+ ["9.23 深夜","素万那普机场内过夜（不进城）","曼谷","陆侧 24h 开放"]
+];
+const M=q=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q);
+const DIR=(o,d,w,m)=>"https://www.google.com/maps/dir/?api=1&origin="+encodeURIComponent(o)+"&destination="+encodeURIComponent(d)+(w&&w.length?"&waypoints="+w.map(encodeURIComponent).join("|"):"")+"&travelmode="+(m||"driving");
+const DAYS=[
+{d:"9.23",w:"周三",title:"厦门 → 曼谷 · 机场过夜",tz:TZ_TH,color:"#0f6b5c",hotel:"素万那普机场内（陆侧 24h 开放）",
+ items:[
+ ["08:45","MF853 起飞",M("厦门高崎国际机场 T3"),"厦门高崎 T3 → 11:15 抵曼谷素万那普（飞行约 3.5h，曼谷比厦门慢 1 小时）"],
+ ["11:15","落地曼谷 · 机场休整",M("素万那普机场"),"行李尝试直挂奥斯陆（联程票，值机时向厦航确认）；B1 层美食街/便利店解决三餐"],
+ ["21:00","TG954 开放值机",M("Suvarnabhumi Airport Departure Hall"),"出发层 4 层；值机后过安检在候机区休息"],
+ ["00:05","TG954 起飞 → 奥斯陆",null,"次日 07:25 抵达，机上过夜"]]},
+{d:"9.24",w:"周四",title:"抵达奥斯陆 · 港区漫游",tz:TZ_NOME,color:"#c0392b",hotel:"Scandic Go Grensen",
+ route:{o:"Oslo Airport Gardermoen",w:["Oslo Opera House"],d:"Scandic Go Grensen Oslo",m:"transit"},
+ items:[
+ ["07:25","TG954 抵达奥斯陆",M("Oslo Airport Gardermoen"),"Vy 火车 R12/RE11 进城约 25–30 分钟（129–150 NOK，比机场快线便宜近一半）"],
+ ["10:00","酒店寄存行李 · 稍作休整",M("Scandic Go Grensen Oslo"),""],
+ ["14:00","歌剧院屋顶全景",M("Oslo Opera House"),"可登上屋顶漫步，18:30 前后光线最佳，俯瞰峡湾"],
+ ["16:00","阿克尔码头海港散步",M("Aker Brygge"),""],
+ ["17:30","卡尔约翰大街 → 国家剧院外观",M("Karl Johans gate Oslo"),"周四多数商店延至 19:00，户外店顺路可逛"],
+ ["19:00","晚餐 Fiskeriet Bjørvika",M("Fiskeriet Youngstorget"),"鱼汤+炸鱼（约 11:00–21:00，建议预约）"]]},
+{d:"9.25",w:"周五",title:"奥斯陆深度 · 户外购物日",tz:TZ_NOME,color:"#2471a3",hotel:"Scandic Go Grensen",
+ route:{o:"Munchmuseet Oslo",w:["Akershus Fortress","Karl Johans gate"],d:"Fuglen Oslo",m:"transit"},
+ items:[
+ ["10:00","蒙克博物馆 MUNCH（预留 2h）",M("MUNCH Oslo"),"周五 10:00–21:00 · 成人 220 NOK · <b>需官网购定时票</b>；3 幅《呐喊》每 30 分钟轮换，看全 3 幅需 1h+；寄存柜限 55×40×23cm"],
+ ["12:30","午餐 Fiskeriet Bjørvika",M("Fiskeriet Youngstorget"),""],
+ ["14:00","市政厅 + 诺贝尔和平中心外观",M("Oslo rådhus"),""],
+ ["16:00","阿克斯胡斯城堡看日落（日落约 18:35）",M("Akershus Fortress"),"城堡开放 6:00–21:00"],
+ ["18:30","Fuglen 咖啡探店",M("Fuglen Oslo"),""],
+ ["购物","奥斯陆户外购物（货最全）",M("Sport1 Karl Johans gate Oslo"),"HH 旗舰店 / Bergans / Sport1；始祖鸟 Nedre Slottsgate 25；攀山鼠 Akersgata 43 · <b>单笔 ≥315 NOK 出示护照开退税单，勿拆封</b> · 今天集中办大额购物"]]},
+{d:"9.26",w:"周六",title:"挪威缩影 · 奥斯陆 → 卑尔根",tz:TZ_NOME,color:"#b8860b",hotel:"Radisson Blu Royal Bergen",
+ route:{o:"Oslo S stasjon",w:["Myrdal stasjon","Flåm","Gudvangen","Voss"],d:"Bergen stasjon",m:"transit"},
+ items:[
+ ["06:25","奥斯陆 S 火车出发",M("Oslo S stasjon"),"挪威缩影套票（已购）"],
+ ["12:06","弗洛姆高山铁路（坐右侧）",M("Flåmsbana"),"看肖斯瀑布 Kjosfossen 最佳位"],
+ ["15:00","纳柔依峡湾游船",M("Gudvangen flåm AS"),"UNESCO 世界遗产峡湾"],
+ ["17:25","景观巴士 → 沃斯 → 火车",M("Voss stasjon"),""],
+ ["20:38","抵达卑尔根 · 入住",M("Radisson Blu Royal Hotel Bergen"),""],
+ ["提示","全天赶路 · 自备零食和水",null,"沿途 Flåm 面包房、Gudvangen 码头咖啡馆、Voss 站便利店"]]},
+{d:"9.27",w:"周日",title:"卑尔根 → 山顶日落 → 夜飞特罗姆瑟 ⚠️",tz:TZ_NOME,color:"#7d3c98",hotel:"Scandic Ishavshotel（已确认 2 间）",
+ route:{o:"Bergen Fish Market",w:["Schøtstuene","Fløibanen"],d:"Bergen Airport BGO",m:"driving"},
+ items:[
+ ["09:30","鱼市海鲜午餐",M("Fisketorget Bergen"),"周日，市中心商店基本关门，今天不安排购物"],
+ ["11:00","布吕根木屋区 + 汉萨博物馆",M("Schøtstuene Bergen"),"10:00–18:00 · 160 NOK · 主馆翻修中，展览在 Schøtstuene（Øvregaten 50）"],
+ ["14:30","弗洛伊恩山缆车上山",M("Fløibanen Bergen"),"山顶俯瞰卑尔根七山港城"],
+ ["19:15","山顶看日落",null,""],
+ ["19:25","立刻下山 → 打车直奔机场",M("Bergen Airport BGO"),"打车约 20 分钟，别等轻轨"],
+ ["19:55","抵达 BGO → 安检登机",null,"20:15 WF630 → 22:20 特罗姆瑟"],
+ ["22:20","抵达特罗姆瑟 · 入住",M("Radisson Blu Hotel Tromsø"),"已确认订单"]],
+ risk:"<b>今天是你拍板保留的「山顶日落」方案，代价自负：</b>WF630 托运柜台 19:35 关闭，此计划只有在「全程手提行李 + 已提前网上值机 + 下山直接打车」时才可行。有任何一件托运行李，请改乘 18:00 前的缆车、放弃日落。"},
+{d:"9.28",w:"周一",title:"特罗姆瑟全天 · 极光夜",tz:TZ_NOME,color:"#117a65",hotel:"Scandic Ishavshotel",
+ route:{o:"Fjellheisen Tromsø",w:["Polarmuseet","Arctic Cathedral"],d:"Radisson Blu Hotel Tromsø",m:"transit"},
+ items:[
+ ["10:00","Fjellheisen 山顶缆车（约至 22:00）",M("Fjellheisen Tromsø"),"俯瞰峡湾与群岛全景"],
+ ["13:00","极地博物馆",M("Polarmuseet Tromsø"),"周一开放时间以现场为准"],
+ ["16:00","北极大教堂外观 + 港口栈桥",M("Ishavskatedralen"),""],
+ ["20:00","极光追猎团（至约 24:00）",M("Tromsø aurora"),"⚠️ <b>需提前预订</b> · 通常含热饮+简餐 · 出发前看 YR 云量和 KP 值"],
+ ["备选","方案B：峡湾游船观鲸海鸟 / 方案C：特罗姆瑟博物馆+北极教堂内部",M("Tromsø fjord cruise"),"视天气二选一"]]},
+{d:"9.29",w:"周二",title:"特罗姆瑟 → 罗弗敦 · 夜路自驾",tz:TZ_NOME,color:"#d35400",hotel:"Scandic Svolvær",
+ route:{o:"Tromsø Airport",w:["Harstad/Narvik Evenes Airport"],d:"Scandic Svolvær",m:"driving"},
+ items:[
+ ["上午","市区休闲 + 伴手礼（Bergans 港口店等）",M("Bergans Tromsø"),"极地厚外套/帽子手套/美利奴内衣可补购，开挪威退税单"],
+ ["14:00","前往机场",M("Tromsø Airport Langnes"),""],
+ ["16:45","WF867 → 18:05 埃沃内斯",M("Harstad/Narvik Airport Evenes"),"经停安德内斯 20 分钟，行李直达"],
+ ["18:30","Hertz 柜台取车",M("Hertz Evenes Airport"),"驾照+翻译认证件+信用卡"],
+ ["19:00","自驾 E10 → 斯沃尔维尔（约 2h40m 夜路）",null,"注意驯鹿与湿滑路面，谨慎驾驶"],
+ ["21:45","抵达入住",M("Scandic Svolvær"),"晚餐建议机场提前解决或到埠便利店"]],
+ risk:"<b>今晚是全程唯一一段夜间长途驾驶</b>（约 2 小时 40 分钟）。若天气恶劣，可改住埃沃内斯机场附近，次日再南下。"},
+{d:"9.30",w:"周三",title:"罗弗敦自驾 · 南下经典线",tz:TZ_NOME,color:"#2874a6",hotel:"Nusfjord Village & Resort",
+ route:{o:"Svolvær",w:["Henningsvær","Reine","Hamnøy","Sakrisøy","Å i Lofoten"],d:"Nusfjord",m:"driving"},
+ items:[
+ ["07:30","斯沃尔维尔港口晨拍",M("Svolvær"),"Svolværgeita 山羊峰外观"],
+ ["09:10","亨宁斯韦尔 · 海上足球场",M("Henningsvær"),"渔村拍照约 1h"],
+ ["12:10","雷讷 Reine 简餐",M("Anita's Sjømat Reine"),"鳕鱼汉堡 120–200 NOK"],
+ ["12:30","Reinebringen 徒步（往返约 2.5h）",M("Reinebringen"),"约 2000 级石阶，15:00 前下山，日落约 18:40 余量充足"],
+ ["15:30","Hamnøy 网红桥 → Sakrisøy 黄色渔屋",M("Hamnøy bridge"),""],
+ ["16:30","奥镇 Å · 世界尽头渔村",M("Å i Lofoten"),"渔村博物馆 10:00–18:00（9.30 前）"],
+ ["18:10","Nusfjord 入住 · 峡湾日落",M("Nusfjord"),"度假村晚餐 <b>需预约</b> · 晚上碰极光"]]},
+{d:"10.1",w:"周四",title:"罗弗敦自驾 · 西侧海滩线",tz:TZ_NOME,color:"#a04000",hotel:"Arctic Resort Lofoten",
+ route:{o:"Nusfjord",w:["Haukland Beach","Uttakleiv Beach"],d:"Ramberg",m:"driving"},
+ items:[
+ ["09:00","Nusfjord 村漫步 + 渔村博物馆",M("Nusfjord"),"百年渔村清晨，博物馆 10:00 开"],
+ ["11:40","Haukland 白沙滩（1.5h）",M("Haukland Beach"),"极地白沙滩+雪山"],
+ ["13:40","Mannen 徒步（往返约 2.5h）",M("Mannen Lofoten"),"爬升 150m 轻松级，俯瞰双白沙滩"],
+ ["16:20","Uttakleiv 黑沙滩",M("Uttakleiv Beach"),"巨石+海浪 40 分钟"],
+ ["17:20","Ramberg 入住（钥匙在寄存箱）",M("Ramberg beach"),"Rorbu 小木屋"],
+ ["18:00","Ramberg Beach 日落 · 小木屋自做晚餐",null,"超市食材：北极甜虾/生食三文鱼/棕奶酪 · 21:00 附近海滩碰极光"]]},
+{d:"10.2",w:"周五",title:"罗弗敦 → 还车 → 夜飞奥斯陆",tz:TZ_NOME,color:"#1e8449",hotel:"Radisson Red Oslo Airport",
+ route:{o:"Ramberg",w:["Eggum","Leknes","Lofotmuseet Kabelvåg","Lofotr Vikingmuseum Borg"],d:"Harstad/Narvik Evenes Airport",m:"driving"},
+ items:[
+ ["09:30","Eggum 海滩（北向开阔+二战雷达遗址）",M("Eggum Beach"),"1h"],
+ ["11:00","Leknes 超市大采购 + 午餐",M("Kiwi Leknes"),"鱼干/羊毛袜/Smash 巧克力（超市不可退税）"],
+ ["12:30","罗弗敦博物馆（卡伯尔沃格）",M("Lofotmuseet Kabelvåg"),"秋季 11:00–15:00，以现场为准 · 130 NOK"],
+ ["14:00","Lofotr 维京博物馆（预留至 15:30）",M("Lofotr Vikingmuseum"),"周二–周六 11:00–17:00 ✓ · 210 NOK · 83 米维京长屋"],
+ ["15:30","出发去机场（约 1.5–2h）",null,"途经 Leknes 可加油"],
+ ["17:30","还车（加满油）→ 机场晚餐",M("Harstad/Narvik Airport Evenes"),""],
+ ["21:25","DY359 → 23:10 奥斯陆",M("Radisson Red Oslo Airport Gardermoen"),"住机场酒店，为明早退税做准备"]]},
+{d:"10.3",w:"周六",title:"⚠️ 挪威退税唯一节点 · 奥斯陆 → 斯德哥尔摩",tz:TZ_NOME,color:"#c0392b",hotel:"Hobo Stockholm",
+ route:{o:"Oslo Airport Gardermoen",w:["Gamla Stan"],d:"Monteliusvägen Stockholm",m:"transit"},
+ items:[
+ ["05:15","起床退房（机场酒店步行即达航站楼）",M("Radisson Red Oslo Airport Gardermoen"),""],
+ ["05:45","直奔 Global Blue/海关柜台（8 号值机区附近）",M("Oslo Airport Gardermoen Global Blue"),"<b>先不托运！</b>护照+退税单+小票+未拆封商品实物 → 挪威海关盖章"],
+ ["06:30","回柜台托运 · 安检",null,""],
+ ["07:40","DY804 → 08:40 斯德哥尔摩",M("Stockholm Arlanda Airport"),""],
+ ["09:10","Arlanda Express 进城（20 分钟）",M("Hobo Stockholm"),"入住/寄存"],
+ ["11:00","老城 Gamla Stan 深度漫步",M("Gamla Stan Stockholm"),"大教堂、诺贝尔博物馆外观"],
+ ["16:00","南岛 Monteliusvägen 悬崖步道",M("Monteliusvägen"),"日落约 18:00，全城全景最佳机位"],
+ ["19:00","晚餐 Den Gyldene Freden 等",M("Den Gyldene Freden"),"<b>需预约</b>"]],
+ risk:"<b>挪威退税只有今天这一个盖章机会</b>——错过即作废，瑞典海关无权补办。退税柜台约 05:00–06:00 开门，务必 06:00 前站到柜台。"},
+{d:"10.4",w:"周日",title:"斯德哥尔摩经典日",tz:TZ_NOME,color:"#2471a3",hotel:"Hobo Stockholm",
+ route:{o:"Royal Palace Stockholm",w:["Nobel Prize Museum","Vasamuseet"],d:"Drottninggatan Stockholm",m:"transit"},
+ items:[
+ ["09:00","老城街巷晨逛",M("Gamla Stan"),""],
+ ["11:40","王宫占位（12:15 换岗仪式）",M("Kungliga slottet Stockholm"),""],
+ ["13:00","诺贝尔博物馆",M("Nobel Prize Museum Stockholm"),"周日 10:00–18:00"],
+ ["15:00","瓦萨沉船博物馆（预留 2h）",M("Vasamuseet"),"10:00–17:00 · 约 190 SEK · 17 世纪完整沉船"],
+ ["17:30","皇后大街购物",M("Drottninggatan Stockholm"),"NK 百货周日营业 · 单笔 ≥200 SEK 开退税单"],
+ ["19:00","晚餐",M("Frantzén Stockholm"),"推荐见贴士：Frantzén（米三，需提前数月）/ Wedholms Fisk / Kajsas Fisk"]]},
+{d:"10.5",w:"周一",title:"斯德哥尔摩休闲 · 购物日",tz:TZ_NOME,color:"#7d3c98",hotel:"Hobo Stockholm",
+ route:{o:"Stockholm City Hall",w:["T-Centralen","NK Stockholm"],d:"Hobo Stockholm",m:"transit"},
+ items:[
+ ["10:00","市政厅建筑导览（蓝厅+金厅，45 分钟）",M("Stockholm City Hall"),"150 SEK · 英文场约 10:00/12:00/14:00 · 先到先得"],
+ ["13:00","艺术地铁打卡（T-Centralen 等）",M("T-Centralen metro station"),""],
+ ["14:30","NK / Åhléns / Fjällräven 旗舰店",M("NK Stockholm"),"周一全部营业，今天是斯京购物最佳日"],
+ ["16:00","可选：斯堪森露天博物馆",M("Skansen"),""],
+ ["19:00","收拾行李 · 退税单据清点拍照",null,""],
+ ["晚餐","Meatballs for the People",M("Meatballs for the People"),"瑞典肉丸专门店"]],
+ note:"<b>改动说明：</b>原计划的「市政厅登塔」仅在每年 5–9 月开放，10 月关闭——已替换为建筑导览（含蓝厅、金厅，即诺贝尔晚宴厅），内容不受影响。"},
+{d:"10.6",w:"周二",title:"斯德哥尔摩 → 伊斯坦布尔 → 曼谷",tz:TZ_NOME+" / "+TZ_TR,color:"#d35400",hotel:"红眼航班",
+ route:{o:"Hobo Stockholm",w:["Stockholm Arlanda Airport T5"],d:"Istanbul Airport",m:"transit"},
+ items:[
+ ["08:20","Arlanda Express 去机场",M("Stockholm Arlanda Airport T5"),"提前 3 小时到（约 08:40）"],
+ ["08:45","瑞典海关盖章 + Global Blue 领钱",M("Arlanda Global Blue"),"<b>先不托运！</b>瑞典单+已盖挪威章的挪威单，都在这里提交拿钱 · 推荐支付宝"],
+ ["11:05","TK1794 → 15:45 伊斯坦布尔",M("Istanbul Airport"),"土航联程，行李直挂曼谷"],
+ ["15:45–20:15","伊斯坦布尔中转（4.5h）",M("Istanbul Airport lounge"),"休息、用餐、逛免税"],
+ ["20:15","TK060 → 次日 09:40 曼谷",null,"机上过夜"]]},
+{d:"10.7",w:"周三",title:"曼谷自转 → 回厦门 🏁",tz:TZ_TH+" / "+TZ_CN,color:"#0f6b5c",hotel:"—",
+ route:{o:"Suvarnabhumi Airport",w:["Suvarnabhumi Airport"],d:"厦门高崎国际机场",m:"transit"},
+ items:[
+ ["09:40","TK060 抵达曼谷素万那普",M("Suvarnabhumi Airport"),""],
+ ["09:50","入境 → 提行李 → MF854 柜台值机",null,"<b>两张独立订单，行李不能直挂</b>；MF 柜台起飞前 60 分钟关闭"],
+ ["12:15","MF854 → 16:35 抵达厦门",M("厦门高崎国际机场 T3"),"旅程结束 🎉"]],
+ risk:"<b>全程最大风险点：</b>曼谷自转仅 2 小时 35 分。土航晚点 1 小时以上即断链。回程尽量少托运大件；若土航前序已延误，落地后直奔 MF 柜台说明情况，争取优先改签。"}
+];
+/* ===================== 倒计时 ===================== */
+const EVENTS=[
+ ["MF853 厦门 → 曼谷 起飞","2026-09-23T08:45:00+08:00","2026-09-23T11:15:00+07:00"],
+ ["TG954 曼谷 → 奥斯陆 起飞","2026-09-24T00:05:00+07:00","2026-09-24T07:25:00+02:00"],
+ ["挪威缩影 奥斯陆 S 出发","2026-09-26T06:25:00+02:00","2026-09-26T20:38:00+02:00"],
+ ["WF630 卑尔根 → 特罗姆瑟 起飞","2026-09-27T20:15:00+02:00","2026-09-27T22:20:00+02:00"],
+ ["WF867 特罗姆瑟 → 埃沃内斯 起飞","2026-09-29T16:45:00+02:00","2026-09-29T18:05:00+02:00"],
+ ["DY359 埃沃内斯 → 奥斯陆 起飞","2026-10-02T21:25:00+02:00","2026-10-02T23:10:00+02:00"],
+ ["DY804 奥斯陆 → 斯德哥尔摩 起飞","2026-10-03T07:40:00+02:00","2026-10-03T08:40:00+02:00"],
+ ["TK1794 斯德哥尔摩 → 伊斯坦布尔 起飞","2026-10-06T11:05:00+02:00","2026-10-06T15:45:00+03:00"],
+ ["TK060 伊斯坦布尔 → 曼谷 起飞","2026-10-06T20:15:00+03:00","2026-10-07T09:40:00+07:00"],
+ ["MF854 曼谷 → 厦门 起飞","2026-10-07T12:15:00+07:00","2026-10-07T16:35:00+08:00"]
+];
+function fmt(n){return String(n).padStart(2,"0")}
+function tick(){
+  const now=new Date(), box=document.getElementById("count"), eEl=document.getElementById("next-evt"), tEl=document.getElementById("next-evt-time");
+  let cur=null;
+  for(const e of EVENTS){const s=new Date(e[1]),t=new Date(e[2]);if(now<t){cur=e;break}}
+  if(!cur){eEl.textContent="旅程已结束，欢迎回家 🏠";tEl.textContent="";box.innerHTML="";return}
+  const s=new Date(cur[1]),t=new Date(cur[2]);
+  const tzLabel=cur[1].slice(-6);
+  if(now<s){
+    let df=Math.floor((s-now)/1000);
+    const d=Math.floor(df/86400);df-=d*86400;const h=Math.floor(df/3600);df-=h*3600;const m=Math.floor(df/60);const sec=df-m*60;
+    eEl.textContent="⏳ 距离「"+cur[0]+"」还有";
+    tEl.textContent=s.toLocaleString("zh-CN",{timeZone:tzoff(tzLabel)})+"（当地时间 "+tzstr(tzLabel)+"）";
+    box.innerHTML=cell(d,"天")+cell(h,"时")+cell(m,"分")+cell(sec,"秒");
+  }else{
+    eEl.textContent="🛫 "+cur[0]+" · 正在进行";
+    tEl.textContent="预计 "+t.toLocaleString("zh-CN",{timeZone:tzoff(tzLabel)})+"（当地时间 "+tzstr(tzLabel)+"）到达";
+    box.innerHTML="";
+  }
+  function tzoff(o){return {"+08:00":"Asia/Shanghai","+07:00":"Asia/Bangkok","+02:00":"Europe/Oslo","+03:00":"Europe/Istanbul"}[o]}
+  function tzstr(o){return {"+08:00":TZ_CN,"+07:00":TZ_TH,"+02:00":TZ_NOME,"+03:00":TZ_TR}[o]}
+}
+function cell(v,u){return '<div class="cell"><span class="num">'+fmt(v)+"</span><span class=\"unit\">"+u+"</span></div>"}
+tick();setInterval(tick,1000);
+/* ===================== 表格 ===================== */
+document.getElementById("flight-table").innerHTML+=FLIGHTS.map(f=>"<tr><td>"+f[0]+"</td><td>"+f[1]+"</td><td>"+f[2]+"</td><td>"+f[3]+'<div class="tz">'+f[4]+"</div></td><td>"+f[5]+"</td></tr>").join("");
+document.getElementById("hotel-table").innerHTML+=HOTELS.map(h=>"<tr><td>"+h[0]+"</td><td>"+h[1]+"</td><td>"+h[2]+"</td><td>"+h[3]+"</td></tr>").join("");
+/* ===================== 逐日卡片 ===================== */
+document.getElementById("days-box").innerHTML=DAYS.map((D,i)=>{
+ const n=i+1;
+ const rows=D.items.map(it=>'<div class="row"><div class="t">'+it[0]+"</div>"+'<div class="c">'+(it[2]?'<a class="maplink" target="_blank" href="'+it[2]+'">'+it[1]+"</a>":it[1])+(it[3]?"<small>"+it[3]+"</small>":"")+"</div></div>").join("");
+ const mapBtn=D.route?'<button class="btn ghost" data-day="'+i+'">🗺️ 当日路线地图</button>':"";
+ const navBtn=D.route?'<a class="btn" target="_blank" href="'+DIR(D.route.o,D.route.d,D.route.w,D.route.m)+'">🧭 全天多点导航</a>':"";
+ const risk=D.risk?'<div class="risk">'+D.risk+"</div>":"";
+ const note=D.note?'<div class="note">'+D.note+"</div>":"";
+ return '<details class="day"'+(n===1?" open":"")+'><summary style="color:'+D.color+'"><span class="dd" style="color:'+D.color+'">D'+n+' <small style="font-size:11px;color:var(--ink2)">'+D.d+'</small></span><span class="dt" style="color:var(--ink)">'+D.title+'</span><span class="arrow">▶</span><span class="hotel">🏨 '+D.hotel+"</span></summary>"
+ +'<div class="daybody"><div class="tzline">🕐 当日时间：'+D.tz+"</div>"+rows+risk+note
+ +'<div class="dayactions">'+mapBtn+navBtn+"</div>"
+ +'<div class="daymap" id="dm'+i+'" style="display:none;margin-top:10px"></div>'
+ +"</div></details>";
+}).join("");
+document.querySelectorAll("[data-day]").forEach(b=>b.addEventListener("click",()=>{
+ const i=b.dataset.day,box=document.getElementById("dm"+i);
+ if(box.style.display==="none"){box.style.display="block";renderDayMap(+i);b.textContent="🗺️ 收起路线图"}
+ else{box.style.display="none";b.textContent="🗺️ 当日路线地图"}
+}));
+/* ===================== SVG 地图 ===================== */
+const WOBBLE='<filter id="wob"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="4"/></filter>';
+function proj(pts,x0,y0,w,h){
+ const lons=pts.map(p=>p[2]),lats=pts.map(p=>p[1]);
+ const lomin=Math.min(...lons),lomax=Math.max(...lons),lamin=Math.min(...lats),lamax=Math.max(...lats);
+ const pad=0.12,spanLo=Math.max(0.5,(lomax-lomin)*(1+2*pad)),spanLa=Math.max(0.5,(lamax-lamin)*(1+2*pad));
+ return p=>[x0+(p[2]-lomin)/spanLo*w+ (w-(lomax-lomin)/spanLo*w)/2, y0+h-(p[1]-lamin)/spanLa*h-(h-(lamax-lamin)/spanLa*h)/2];
+}
+function drawMap(svg,pts,links,colors,labels,opt){
+ opt=opt||{};const W=opt.w||640,H=opt.h||420;
+ let s='<svg viewBox="0 0 '+W+" "+H+'" style="width:100%;height:auto;'+(opt.bg?'background:'+opt.bg+';border-radius:10px;':'')+'">'+WOBBLE;
+ // 网格底
+ s+='<g opacity="0.35">';
+ for(let x=20;x<W;x+=48)s+='<line x1="'+x+'" y1="10" x2="'+x+'" y2="'+(H-10)+'" stroke="var(--line)" stroke-width="0.5" stroke-dasharray="1 5"/>';
+ for(let y=20;y<H;y+=48)s+='<line x1="10" y1="'+y+'" x2="'+(W-10)+'" y2="'+y+'" stroke="var(--line)" stroke-width="0.5" stroke-dasharray="1 5"/>';
+ s+="</g>";
+ const P=proj(pts,44,26,W-64,H-64);
+ s+='<g filter="url(#wob)">';
+ links.forEach((L,i)=>{
+  const c=colors[i%colors.length];
+  for(let k=0;k<L.length-1;k++){
+    const a=P(pts[L[k]]),b=P(pts[L[k+1]]);
+    const mx=(a[0]+b[0])/2+(k%2?10:-10),my=(a[1]+b[1])/2+(k%2?-12:12);
+    s+='<path d="M'+a[0]+","+a[1]+" Q"+mx+","+my+" "+b[0]+","+b[1]+'" fill="none" stroke="'+c+'" stroke-width="'+(opt.sw||3.2)+'" stroke-linecap="round" stroke-dasharray="'+(opt.dash||"9 6")+'" opacity="0.9"/>';
+  }
+ });
+ s+="</g>";
+ pts.forEach((p,pi)=>{
+  const q=P(p),isH=p[4]==="h",isP=p[4]==="p";
+  if(isP){s+='<circle cx="'+q[0]+'" cy="'+q[1]+'" r="4.5" fill="var(--panel)" stroke="var(--ink2)" stroke-width="1.5"/>';}
+  else{s+='<circle cx="'+q[0]+'" cy="'+q[1]+'" r="'+(isH?6:4.5)+'" fill="'+(isH?"var(--accent)":"var(--ink)")+'"/>';if(isH)s+='<circle cx="'+q[0]+'" cy="'+q[1]+'" r="10" fill="none" stroke="var(--accent)" stroke-width="1.2" stroke-dasharray="3 3"/>';}
+  const lb=labels[pi];
+  if(lb){const anch=q[0]>W-90?"end":(q[0]<90?"start":"middle");
+    s+='<text x="'+q[0]+'" y="'+(q[1]-12)+'" text-anchor="'+anch+'" font-size="12.5" fill="var(--ink)" font-family="Kaiti SC,STKaiti,KaiTi,serif">'+lb.replace(/ 🏨/,"")+(lb.includes(" 🏨")?' <tspan fill="var(--accent)">🏨</tspan>':"")+"</text>";}
+ });
+ s+="</svg>";svg.outerHTML=s;
+}
+/* 总览：北欧主图 + 长途航段示意 */
+const OV=[
+ // name, lat, lon, type (h=hotel night, p=place, x=offmap)
+ ["厦门",24.48,118.09,"x"],["曼谷",13.69,100.55,"x"],["奥斯陆",59.91,10.75,"h"],["米达尔",60.87,7.12,"p"],
+ ["弗洛姆",60.86,7.11,"p"],["居德旺恩",60.86,6.88,"p"],["沃斯",60.63,6.42,"p"],["卑尔根 🏨",60.39,5.32,"h"],
+ ["特罗姆瑟 🏨",69.65,18.96,"h"],["埃沃内斯",68.49,16.68,"p"],["斯沃尔维尔 🏨",68.23,14.57,"h"],
+ ["亨宁斯韦尔",68.10,14.20,"p"],["雷讷",67.93,13.09,"p"],["奥镇 Å",67.88,13.06,"p"],["Nusfjord 🏨",68.01,13.51,"h"],
+ ["Haukland",68.15,13.64,"p"],["Ramberg 🏨",68.09,13.26,"h"],["Leknes",68.15,13.61,"p"],["卡伯尔沃格",68.21,14.48,"p"],
+ ["Borg 维京村",68.25,13.76,"p"],["埃古姆",68.30,13.75,"p"],["奥斯陆机场 🏨",60.19,11.10,"h"],["斯德哥尔摩 🏨",59.33,18.07,"h"]
+];
+// 总览画法：北欧区（截去厦门/曼谷/伊斯坦布尔，用箭头注记）
+const OV_NORDIC=OV.slice(2);
+const OV_LINKS=[
+ [0,1,2,3,4,5],              // 9.26 挪威缩影 奥斯陆→卑尔根
+ [5,6],                      // 9.27 卑尔根→特罗姆瑟（飞）
+ [6,7,8],                    // 9.29 特罗姆瑟→埃沃内斯→斯沃尔维尔
+ [8,9,10,11,12],             // 9.30 南下 斯沃尔维尔→…→Nusfjord
+ [12,13,14],                 // 10.1 西线
+ [14,18,15,16,17,7],         // 10.2 Eggum/Leknes/卡伯尔沃格/Borg→埃沃内斯
+ [7,19],                     // 10.2 埃沃内斯→奥斯陆（飞）
+ [19,20]                     // 10.3 奥斯陆机场→斯德哥尔摩
+];
+const OV_COLORS=[DAYS[3],DAYS[4],DAYS[6],DAYS[7],DAYS[8],DAYS[9],DAYS[9],DAYS[10]].map(d=>d.color);
+const OV_LABELS=OV_NORDIC.map(p=>p[0]);
+setTimeout(()=>{
+ drawMap(document.getElementById("overview"),OV_NORDIC,OV_LINKS,OV_COLORS,OV_LABELS,{w:640,h:760,sw:3.4});
+ // 图例
+ document.getElementById("legend").innerHTML=DAYS.map((d,i)=>"<span><i style='background:"+d.color+"'></i>D"+(i+1)+" · "+d.d+" "+d.title.slice(0,14)+"</span>").join("")
+ +'<span style="width:100%;color:var(--ink2)">✈️ 长途段（画幅外）：厦门 ⇄ 曼谷 ⇄ 奥斯陆（9.23/9.24），斯德哥尔摩 → 伊斯坦布尔 → 曼谷 → 厦门（10.6–10.7）</span>';
+},0);
+/* 每日小地图 */
+function renderDayMap(i){
+ const D=DAYS[i],box=document.getElementById("dm"+i);
+ const idx={},pts=[];
+ function add(name,lat,lon,type){if(idx[name]===undefined){idx[name]=pts.length;pts.push([name,lat,lon,type])}return idx[name]}
+ (D.route.w||[]).forEach(n=>{
+   const m={"Oslo Airport Gardermoen":[60.19,11.10,"p"],"Oslo Opera House":[59.907,10.753,"p"],"Scandic Go Grensen Oslo":[59.916,10.746,"h"],"Aker Brygge":[59.911,10.740,"p"],"Karl Johans gate Oslo":[59.913,10.745,"p"],"Fiskeriet Youngstorget":[59.911,10.752,"p"],"MUNCH Oslo":[59.906,10.766,"p"],"Oslo rådhus":[59.911,10.730,"p"],"Akershus Fortress":[59.908,10.740,"p"],"Fuglen Oslo":[59.919,10.739,"p"],"Sport1 Karl Johans gate Oslo":[59.913,10.747,"p"],
+   "Oslo S stasjon":[59.911,10.752,"p"],"Myrdal stasjon":[60.87,7.12,"p"],"Flåm":[60.86,7.11,"p"],"Gudvangen flåm AS":[60.86,6.88,"p"],"Voss stasjon":[60.63,6.42,"p"],"Bergen stasjon":[60.39,5.33,"p"],"Radisson Blu Royal Hotel Bergen":[60.396,5.322,"h"],
+   "Bergen Fish Market":[60.395,5.323,"p"],"Schøtstuene":[60.397,5.326,"p"],"Fløibanen":[60.389,5.334,"p"],"Bergen Airport BGO":[60.293,5.218,"p"],"Radisson Blu Hotel Tromsø":[69.641,18.959,"h"],
+   "Fjellheisen Tromsø":[69.634,18.999,"p"],"Polarmuseet Tromsø":[69.648,18.956,"p"],"Ishavskatedralen":[69.646,18.972,"p"],"Tromsø aurora":[69.65,18.96,"p"],"Tromsø fjord cruise":[69.648,18.955,"p"],"Tromsø Airport Langnes":[69.683,18.918,"p"],"Bergans Tromsø":[69.646,18.955,"p"],
+   "Harstad/Narvik Airport Evenes":[68.49,16.68,"p"],"Harstad/Narvik Evenes Airport":[68.49,16.68,"p"],"Hertz Evenes Airport":[68.49,16.68,"p"],"Scandic Svolvær":[68.234,14.565,"h"],"Svolvær":[68.234,14.565,"h"],
+   "Henningsvær":[68.100,14.199,"p"],"Anita's Sjømat Reine":[67.933,13.088,"p"],"Reinebringen":[67.93,13.05,"p"],"Hamnøy bridge":[67.949,13.111,"p"],"Å i Lofoten":[67.878,13.058,"p"],"Nusfjord":[68.012,13.509,"h"],
+   "Mannen Lofoten":[68.14,13.62,"p"],"Haukland Beach":[68.148,13.636,"p"],"Uttakleiv Beach":[68.183,13.591,"p"],"Ramberg beach":[68.094,13.257,"h"],"Ramberg":[68.094,13.257,"h"],
+   "Eggum Beach":[68.30,13.749,"p"],"Kiwi Leknes":[68.153,13.606,"p"],"Lofotmuseet Kabelvåg":[68.21,14.477,"p"],"Lofotr Vikingmuseum":[68.245,13.758,"p"],"Radisson Red Oslo Airport Gardermoen":[60.19,11.10,"h"],"Oslo Airport Gardermoen Global Blue":[60.19,11.10,"p"],
+   "Gamla Stan":[59.325,18.071,"p"],"Den Gyldene Freden":[59.325,18.074,"p"],"Royal Palace Stockholm":[59.327,18.073,"p"],"Nobel Prize Museum Stockholm":[59.324,18.070,"p"],"Vasamuseet":[59.329,18.092,"p"],"Drottninggatan Stockholm":[59.332,18.062,"p"],"Frantzén Stockholm":[59.334,18.072,"p"],
+   "Stockholm City Hall":[59.328,18.054,"h"],"T-Centralen metro station":[59.332,18.061,"p"],"NK Stockholm":[59.333,18.070,"p"],"Skansen":[59.321,18.101,"p"],"Hobo Stockholm":[59.333,18.059,"h"],"Stockholm Arlanda Airport":[59.651,17.921,"p"],"Stockholm Arlanda Airport T5":[59.651,17.921,"p"],"Arlanda Global Blue":[59.651,17.921,"p"],"Istanbul Airport":[41.26,28.74,"p"],"Suvarnabhumi Airport":[13.69,100.75,"p"],"Suvarnabhumi Airport Departure Hall":[13.69,100.75,"p"],"厦门高崎国际机场 T3":[24.54,118.13,"p"],"厦门高崎国际机场":[24.54,118.13,"p"]}[n];
+   if(m)add(n,m[0],m[1],m[2]);
+ });
+ const o=D.route.o,d=D.route.d;
+ add(o,{"Tromsø Airport":69.683,"Oslo Airport Gardermoen":60.19,"Oslo S stasjon":59.911,"MUNCH Oslo":59.906,"Bergen Fish Market":60.395,"Fjellheisen Tromsø":69.634,"Svolvær":68.234,"Nusfjord":68.012,"Ramberg":68.094,"Hobo Stockholm":59.333,"Stockholm City Hall":59.328}[o]||0,{"Tromsø Airport":18.918,"Oslo Airport Gardermoen":11.10,"Oslo S stasjon":10.752,"MUNCH Oslo":10.766,"Bergen Fish Market":5.323,"Fjellheisen Tromsø":18.999,"Svolvær":14.565,"Nusfjord":13.509,"Ramberg":13.257,"Hobo Stockholm":18.059,"Stockholm City Hall":18.054}[o]||0,"h");
+ add(d,{"Scandic Go Grensen Oslo":59.916,"Radisson Blu Royal Hotel Bergen":60.396,"Radisson Blu Hotel Tromsø":69.641,"Scandic Svolvær":68.234,"Nusfjord":68.012,"Ramberg beach":68.094,"Radisson Red Oslo Airport Gardermoen":60.19,"Hobo Stockholm":59.333,"Monteliusvägen Stockholm":59.318,"Istanbul Airport":41.26,"厦门高崎国际机场":24.54,"Bergen Airport BGO":60.293,"Harstad/Narvik Evenes Airport":68.49}[d]||0,{"Scandic Go Grensen Oslo":10.746,"Radisson Blu Royal Hotel Bergen":5.322,"Radisson Blu Hotel Tromsø":18.959,"Scandic Svolvær":14.565,"Nusfjord":13.509,"Ramberg beach":13.257,"Radisson Red Oslo Airport Gardermoen":11.10,"Hobo Stockholm":18.059,"Monteliusvägen Stockholm":18.061,"Istanbul Airport":28.74,"厦门高崎国际机场":118.13,"Bergen Airport BGO":5.218,"Harstad/Narvik Evenes Airport":16.68}[d]||0,"h");
+ const order=[idx[o],...(D.route.w||[]).map(n=>idx[n]).filter(x=>x!==undefined),idx[d]].filter((v,ix,ar)=>v!==undefined&&ar.indexOf(v)===ix);
+ const chain=order.map(ix=>ix);
+ const links=[chain];
+ const labels=pts.map((p,i2)=>{const name=p[0];const short=name.replace(/ Airport.*/,"机场").replace(/stasjon$/,"站");return i2===0?short+" 🏨":(i2===chain[chain.length-1]?short+" 🏨":short)});
+ drawMap(box,pts,links,[D.color],labels,{w:640,h:Math.max(300,pts.length*44),sw:3,dash:"8 6",bg:"var(--bg)"});
+}
+</script>
+</body>
+</html>
